@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" >
+    <!-- Ajout d'une description (a completer) -->
+    <meta name="description" content="Les Princes du monde entier" >
+    
+    <title>Les Princes du monde entier : </title>
+
+    <link rel="stylesheet" href="splacement.css">
+    <link id="css" rel="stylesheet" href="styleclair.css">
+    <link rel="icon" type="image/jpg" href="favicon.ico.jpg">
+</head>
+<body>
+
+
+
+<!-- Menu déroulant -->
+<nav>
+  <ul>
+    <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
+      <ul class="sous">
+        <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
+        <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+      </ul>
+    </li>
+    <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
+      <ul class="sous">
+        <li><a href="#">Le Prince</a></li>
+        <li><a href="#">Le Prince Ténébreux</a></li>
+        <li><a href="#">Le Petit Prince </a></li>
+      </ul>
+    </li>
+    <li class="deroulant"><a href="#">Divers &ensp;</a>
+      <ul class="sous">
+        <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
+        <li><a href="PrinceLu.html">Les Princes Lu</a></li>
+      </ul>
+    </li>
+    <!-- Bouton pour changer le thème du site -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><button class="deroulant" id="theme" >Changer le thème</button></li>
+    </li>
+  </ul>
+</nav>
+
+ <h1>Les Princes</h1>
+
+<!-- <footer> 
+    <h2>Notes</h2> 
+    <ul> 
+      <li id="nb1" tabindex="-1"> 
+       <p>
+        <a href="#nh1" title="retour au texte 1">[1]</a> Depuis le 8 septembre 2022
+       </p>
+      </li> 
+      <li id="nb2" tabindex="-1" > 
+       <p>
+        <a href="#nh2" title="retour au texte 2">[2]</a> Depuis le 19 juin 2014
+       </p>
+      </li> 
+      <li id="nb4" tabindex="-1" > 
+        <p>
+         <a href="#nh4" title="retour au texte 4">[4]</a> Les goûts vanille, lait-choco et tout choco.
+        </p>
+       </li> 
+    </ul> 
+  </footer> -->
+
+<!-- Formulaire pour récuperer l'avis des gens -->
+<form class = "form.container" action="avis">
+    <p>
+        <label class = "form.container" for="pseudo">Pseudo :</label>
+        <input type="text" name="pseudo" id="pseudo" >
+        
+        <label for="message">Message :</label>
+        <textarea name="message" id="message"></textarea>
+
+
+        <input type="submit" value="Envoyer">
+    </p>
+</form>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-color : #0B162C;
+    font-family : Arial, Helvetica, sans-serif;
+    color: #A9CEF4;
+}
+
+
+nav{
+    background-color : #3B556D;
+    color : #B8CBD0;
+}
+
+
+tr {
+    background-color : #3B556D;
+    color : #000000;
+}
+
+th:hover {
+    background-color : #7A90A4;
+    color : #000000;
+}
+
+
+th:active {
+    background-color : #7A90A4;
+    color : #000000;
+}
+
+
+blockquote p {
+    background: #3B556D;
+}

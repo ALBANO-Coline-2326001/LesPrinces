@@ -1,0 +1,54 @@
+body{
+    background-color : #709CA7;
+    font-family : Arial, Helvetica, sans-serif;
+    color: #264653;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* met moi les images les une a coté des autes */
+
+img {
+    float: left;
+    margin: 0 0 1em 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+tr {
+    background-color : #B8CBD0;
+    color : #000000;
+}
+
+th:hover {
+    background-color : #7A90A4;
+    color : #000000;
+}
+
+th:active {
+    background-color : #7A90A4;
+    color : #000000;
+}
+
+
+blockquote p {
+    background: #B8CBD0;
+}
