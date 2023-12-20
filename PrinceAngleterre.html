@@ -1,50 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Prince D'angleterre</title>
+    <meta charset="UTF-8" >
+    <!-- Ajout d'une description (a completer) -->
+    <meta name="description" content="Les Princes du monde entier" >
+    
+    <title>Les Princes du monde entier : </title>
 
     <link rel="stylesheet" href="splacement.css">
     <link id="css" rel="stylesheet" href="styleclair.css">
     <link rel="icon" type="image/jpg" href="favicon.ico.jpg">
-
 </head>
 <body>
 
 
-
 <!-- Menu déroulant -->
+<header>
 <nav>
-    <ul>
-      <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
-        <ul class="sous">
-          <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
-          <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
-        </ul>
-      </li>
-      <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
-        <ul class="sous">
-          <li><a href="#">Le Prince</a></li>
-          <li><a href="#">Le Prince Ténébreux</a></li>
-          <li><a href="#">Le Petit Prince </a></li>
-        </ul>
-      </li>
-      <li class="deroulant"><a href="#">Divers &ensp;</a>
-        <ul class="sous">
-          <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
-          <li><a href="PrinceLu.html">Les Princes Lu</a></li>
-        </ul>
-      </li>
-      <!-- Bouton pour changer le thème du site -->
-      <li><a href="index.html">Accueil</a></li>
-      <li><button class="deroulant" id="theme" >Changer le thème</button></li>
-      </li>
-    </ul>
-  </nav>
-  
+      <ul>
+        <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
+          <ul class="sous">
+            <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
+            <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+          </ul>
+        </li>
+        <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
+          <ul class="sous">
+            <li><a href="PrinceCR.html">Le Prince</a></li>
+            <li><a href="DarkPrinceCR.html">Le Prince Ténébreux</a></li>
+            <li><a href="PetitPrince.html">Le Petit Prince </a></li>
+          </ul>
+        </li>
+        <li class="deroulant"><a href="#">Divers &ensp;</a>
+          <ul class="sous">
+            <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
+            <li><a href="PrinceLu.html">Les Princes Lu</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><button class="deroulant theme"  >Changer le thème</button></li>
+      </ul>
+    </nav>
+</header>
 
-    <h1>I - Le prince d'Angleterre</h1>
+
+<div class = 'burger'>
+<nav>
+  <label for="toggle">☰</label>
+  <input type="checkbox" id="toggle">
+  <div class="main_pages">
+      <a href="PrinceAngleterre.html">Prince d'Angleterre</a>
+      <a href="PrincesseEspagne.html">Princesse d'Espagne</a>
+      <a href="PrinceCR.html">Le Prince</a>
+      <a href="DarkPrinceCR.html">Le Prince Ténébreux</a>
+      <a href="PetitPrince.html">Le Petit Prince </a>
+      <a href="PetitPrince.html">Le Petit Prince (Livre)</a>
+      <a href="PrinceLu.html">Les Princes Lu</a>
+      <a href="index.html">Accueil</a>
+      <button class="theme" >Changer le thème</button>
+  </div>
+</nav>
+</div>
+
+<h1><p>Le Prince D'angleterre</p></h1>
 
 <ul>
 
@@ -103,7 +121,24 @@
     </tr>
 </table>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/William_Submarines_Crop.png/200px-William_Submarines_Crop.png" alt="Prince William, Duc de Cambridge" title="Prince William, Duc de Cambridge" />
- 
+<!-- modification de l'image Coline -->
+<div class = "card">
+  <div class = "image-box">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/William_Submarines_Crop.png/200px-William_Submarines_Crop.png" alt="Prince William, Duc de Cambridge" title="Prince William, Duc de Cambridge" />
+  </div>
+
+
+<div class = "text-box">
+  <div class = "main">
+    <span> Prince d'angleterre </span>
+  </div> 
+  <div class = "sub">
+    <span> Clash Royal</span>
+  </div>
+</div> 
+</div>
+
+<script src="script.js" defer></script>
+
 </body>
 </html>

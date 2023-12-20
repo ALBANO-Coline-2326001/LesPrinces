@@ -10,36 +10,54 @@
     <link rel="icon" type="image/jpg" href="favicon.ico.jpg">
 </head>
 <body>
-
-
-<!-- Menu déroulant -->
-<nav>
-    <ul>
-      <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
-        <ul class="sous">
-          <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
-          <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
-        </ul>
-      </li>
-      <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
-        <ul class="sous">
-          <li><a href="#">Le Prince</a></li>
-          <li><a href="#">Le Prince Ténébreux</a></li>
-          <li><a href="#">Le Petit Prince </a></li>
-        </ul>
-      </li>
-      <li class="deroulant"><a href="#">Divers &ensp;</a>
-        <ul class="sous">
-          <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
-          <li><a href="PrinceLu.html">Les Princes Lu</a></li>
-        </ul>
-      </li>
-      <!-- Bouton pour changer le thème du site -->
-      <li><a href="index.html">Accueil</a></li>
-      <li><button class="deroulant" id="theme" >Changer le thème</button></li>
-      </li>
-    </ul>
-  </nav>
+  <!-- Menu déroulant -->
+  <header>
+    <nav>
+          <ul>
+            <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
+              <ul class="sous">
+                <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
+                <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+              </ul>
+            </li>
+            <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
+              <ul class="sous">
+                <li><a href="PrinceCR.html">Le Prince</a></li>
+                <li><a href="DarkPrinceCR.html">Le Prince Ténébreux</a></li>
+                <li><a href="PetitPrince.html">Le Petit Prince </a></li>
+              </ul>
+            </li>
+            <li class="deroulant"><a href="#">Divers &ensp;</a>
+              <ul class="sous">
+                <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
+                <li><a href="PrinceLu.html">Les Princes Lu</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><button class="deroulant theme"  >Changer le thème</button></li>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    
+    
+    <div class = 'burger'>
+    <nav>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <div class="main_pages">
+          <a href="PrinceAngleterre.html">Prince d'Angleterre</a>
+          <a href="PrincesseEspagne.html">Princesse d'Espagne</a>
+          <a href="PrinceCR.html">Le Prince</a>
+          <a href="DarkPrinceCR.html">Le Prince Ténébreux</a>
+          <a href="PetitPrince.html">Le Petit Prince </a>
+          <a href="PetitPrince.html">Le Petit Prince (Livre)</a>
+          <a href="PrinceLu.html">Les Princes Lu</a>
+          <a href="index.html">Accueil</a>
+          <button class="theme" >Changer le thème</button>
+      </div>
+    </nav>
+    </div>
 
     <h1>La Princesse d'Espagne</h1>
 
@@ -86,3 +104,7 @@
 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Leonor%2C_Princess_of_Asturias_2020_%28crop2%29.jpg" alt="Leonor de Borbón y OrtizN, la Princesse d'Espagne" title="Leonor de Borbón y OrtizN, la Princesse d'Espagne">
+
+<script src="script.js" defer></script>
+</body>
+</html>

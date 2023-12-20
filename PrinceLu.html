@@ -5,38 +5,60 @@
     <meta charset="UTF-8">
     <title>Le Prince de Lu </title>
     <link rel="stylesheet" href="styleclair.css">
+    <link rel="stylesheet" href="splacement.css">
+
     <link rel="icon" type="image/jpg" href="favicon.ico.jpg">
 </head>
 <body>
 
 <!-- Menu déroulant -->
-<nav>
-    <ul>
-      <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
-        <ul class="sous">
-          <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
-          <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+<header>
+  <nav>
+        <ul>
+          <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
+            <ul class="sous">
+              <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
+              <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+            </ul>
+          </li>
+          <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
+            <ul class="sous">
+              <li><a href="PrinceCR.html">Le Prince</a></li>
+              <li><a href="DarkPrinceCR.html">Le Prince Ténébreux</a></li>
+              <li><a href="PetitPrince.html">Le Petit Prince </a></li>
+            </ul>
+          </li>
+          <li class="deroulant"><a href="#">Divers &ensp;</a>
+            <ul class="sous">
+              <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
+              <li><a href="PrinceLu.html">Les Princes Lu</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><button class="deroulant theme"  >Changer le thème</button></li>
+          </li>
         </ul>
-      </li>
-      <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
-        <ul class="sous">
-          <li><a href="#">Le Prince</a></li>
-          <li><a href="#">Le Prince Ténébreux</a></li>
-          <li><a href="#">Le Petit Prince </a></li>
-        </ul>
-      </li>
-      <li class="deroulant"><a href="#">Divers &ensp;</a>
-        <ul class="sous">
-          <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
-          <li><a href="PrinceLu.html">Les Princes Lu</a></li>
-        </ul>
-      </li>
-      <!-- Bouton pour changer le thème du site -->
-      <li><a href="index.html">Accueil</a></li>
-      <li><button class="deroulant" id="theme" >Changer le thème</button></li>
-      </li>
-    </ul>
+      </nav>
+  </header>
+  
+  
+  <div class = 'burger'>
+  <nav>
+    <label for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+    <div class="main_pages">
+        <a href="PrinceAngleterre.html">Prince d'Angleterre</a>
+        <a href="PrincesseEspagne.html">Princesse d'Espagne</a>
+        <a href="PrinceCR.html">Le Prince</a>
+        <a href="DarkPrinceCR.html">Le Prince Ténébreux</a>
+        <a href="PetitPrince.html">Le Petit Prince </a>
+        <a href="PetitPrince.html">Le Petit Prince (Livre)</a>
+        <a href="PrinceLu.html">Les Princes Lu</a>
+        <a href="index.html">Accueil</a>
+        <button class="theme" >Changer le thème</button>
+    </div>
   </nav>
+  </div>
 
 
 
@@ -102,3 +124,8 @@
 </table>
 
 <img src="https://media.carrefour.fr/medias/c0ef78c47cda3dcc90996f1bc11fe11d/p_200x200/07622210449283-c1c1-s795.jpg" alt="Prince de Lu" title="Prince de Lu">
+
+
+<script src="script.js" defer></script>
+</body>
+</html>

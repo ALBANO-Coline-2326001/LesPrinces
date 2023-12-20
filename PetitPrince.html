@@ -4,38 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="splacement.css">
+    <link id="css" rel="stylesheet" href="neige.css">
+
+    <link id="css" rel="stylesheet" href="styleclair.css">
+
 </head>
 <body>
 
+  <snowfall>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+    <snowflake><span>👑</span>️️</snowflake>
+</snowfall>
 
 <!-- Menu déroulant -->
-<nav>
-    <ul>
-      <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
-        <ul class="sous">
-          <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
-          <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+<header>
+  <nav>
+        <ul>
+          <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
+            <ul class="sous">
+              <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
+              <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
+            </ul>
+          </li>
+          <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
+            <ul class="sous">
+              <li><a href="PrinceCR.html">Le Prince</a></li>
+              <li><a href="DarkPrinceCR.html">Le Prince Ténébreux</a></li>
+              <li><a href="PetitPrince.html">Le Petit Prince </a></li>
+            </ul>
+          </li>
+          <li class="deroulant"><a href="#">Divers &ensp;</a>
+            <ul class="sous">
+              <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
+              <li><a href="PrinceLu.html">Les Princes Lu</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><button class="deroulant theme"  >Changer le thème</button></li>
+          </li>
         </ul>
-      </li>
-      <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
-        <ul class="sous">
-          <li><a href="#">Le Prince</a></li>
-          <li><a href="#">Le Prince Ténébreux</a></li>
-          <li><a href="#">Le Petit Prince </a></li>
-        </ul>
-      </li>
-      <li class="deroulant"><a href="#">Divers &ensp;</a>
-        <ul class="sous">
-          <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
-          <li><a href="PrinceLu.html">Les Princes Lu</a></li>
-        </ul>
-      </li>
-      <!-- Bouton pour changer le thème du site -->
-      <li><a href="index.html">Accueil</a></li>
-      <li><button class="deroulant" id="theme" >Changer le thème</button></li>
-      </li>
-    </ul>
+      </nav>
+  </header>
+  
+  
+  <div class = 'burger'>
+  <nav>
+    <label for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+    <div class="main_pages">
+        <a href="PrinceAngleterre.html">Prince d'Angleterre</a>
+        <a href="PrincesseEspagne.html">Princesse d'Espagne</a>
+        <a href="PrinceCR.html">Le Prince</a>
+        <a href="DarkPrinceCR.html">Le Prince Ténébreux</a>
+        <a href="PetitPrince.html">Le Petit Prince </a>
+        <a href="PetitPrince.html">Le Petit Prince (Livre)</a>
+        <a href="PrinceLu.html">Les Princes Lu</a>
+        <a href="index.html">Accueil</a>
+        <button class="theme" >Changer le thème</button>
+    </div>
   </nav>
+  </div>
 
 
     <h1>Le petit prince</h1>
@@ -95,9 +138,6 @@
     <p>toutes les grandes personnes ont d'abord été des enfants. (Mais peu d'entre elles s'en souviennent.)</p>
 </blockquote>
 
-</body>
-
-</html>
-
+<script src="script.js" defer></script>
 </body>
 </html>

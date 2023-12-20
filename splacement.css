@@ -1,10 +1,9 @@
 body{
-    font-size : 1em;
-    line-height : 1.6em;
     margin: O;
 }
 
 /* Menu Déroulant */
+
 *{
   margin: 0px;
   padding: 0px;
@@ -14,6 +13,11 @@ body{
 header{
  display: flex;
  justify-content: space-evenly;
+ z-index: 3;
+}
+
+.burger{
+  display : none;
 }
 
 nav{
@@ -21,8 +25,10 @@ nav{
   margin: 0 auto;
   background-color: white;
   position: sticky;
-  top: 0px;
+  top: 0dpx;
+
 }
+
 
 nav ul{
   list-style-type: none;
@@ -52,6 +58,7 @@ nav a{
 nav a:hover{
   color: orange;
   border-bottom: 2px solid gold;
+
 }
 
 .sous{
@@ -61,6 +68,7 @@ nav a:hover{
   position: absolute;
   width: 100%;
   z-index: 1000;
+
 }
 nav > ul li:hover .sous{
   display: block;
@@ -81,6 +89,7 @@ nav > ul li:hover .sous{
 .deroulant > a::after{
   content:" ▼";
   font-size: 12px;
+
 }
 
 .conteneur{
@@ -90,23 +99,73 @@ height: 1500px;
 
 
 
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+      height: 2em;
+    }
+
+    .burger{
+      display : flex;
+    }
+ 
+    header{
+      display : none;
+    }
+
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #3B556D;
+        height: 25em;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 1em;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+    
+}
+
 
 /* Titre */
 h1{
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 40vh;
+  height: 5em;
   background-image: url(https://img.freepik.com/vecteurs-libre/couronne-or-ligne-vague_1017-33680.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702425600&semt=sph);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
   color: #f7ede1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60pt;
+  text-align: center;
+  font-size: 30pt;
   margin: 0;
+  z-index: -5;
+  flex: 1 1 0;
 }
 
 
@@ -115,8 +174,40 @@ h1{
 
 
 
+/* image coline */ 
+.main span {
+  transition-delay: 0.2;
+  transform : translateY (100%);
+}
 
 
+
+.sub span {
+  transform : translateY (-100%);
+  transition-delay : 0.5s;
+}
+
+.card:hover .text-box :is(span){
+  transform : translateY(0%);
+}
+
+
+
+
+.card .image-box img{
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  filter: grayscale(0) brightness(1);
+  scale: 1.2;
+  transition: scale 2s ease-in-out, filter 1s ease-in-out;
+}
+
+
+.card:hover .image-box img{
+  filter: grayscale(1) brightness(0.7);
+  scale : 1;
+}
 
 
 
@@ -128,17 +219,53 @@ table{
 
 
 
-.form.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    font-size: 50px;
-}
-
-
 blockquote p {
     padding: 15px;
     border-radius: 5px;
+}
+/*boutton subscribe Sarah*/
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.Nom{
+  flex: 1 0 10rem
+}
+.Email{
+  flex: 1 0 10rem
+}
+.button{
+  flex: 1 0 5rem;
+}
+
+/*test youssef*/
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
 }
