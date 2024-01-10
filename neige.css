@@ -98,13 +98,13 @@ snowfall snowflake:nth-child(4){
 
 @keyframes animation-snowflake-4{
     0%{
-        left:10%;
+        left:50%;
         top:calc(0% - 100px);
         transform:scale(1.235) rotate3d(.92,.78,.97,0deg)
     }
     100%{
-        left:50%;
+        left:10%;
         top:calc(100% + 100px);
-        transform:scale(1.235) rotate3d(.75,.86,.08,-1042deg)
+        transform:scale(1.235) rotate3d(.75,.86,.08,-1500deg)
     }
 }

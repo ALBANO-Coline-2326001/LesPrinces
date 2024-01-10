@@ -9,18 +9,15 @@ body{
 
 /* Style du menu */
 .navbar a{
-    color: black;
-    
-}
-
-a:visited{
     color: rgb(73, 165, 131);
 }
 
-.navbar .nav-links ul li.active a{
+a:visited{
     color: black;
-    font-size: 20px;
+}
 
+.navbar .nav-links ul li.active a{
+    color: rgb(51, 3, 174);
 }
 
 .navbar .nav-links ul li a:hover{

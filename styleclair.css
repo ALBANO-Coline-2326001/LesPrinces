@@ -35,7 +35,7 @@ a:visited{
 @media screen and (max-width: 1000px){
 
     .nav-links{
-        background-color: rgba(255, 255, 255, 0.299);
+        background-color: rgb(176, 202, 220);
     }
     
 }

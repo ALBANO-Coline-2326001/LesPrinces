@@ -45,6 +45,14 @@ body{
 
 .navbar .nav-links ul li.active a{
     font-weight: 600;
+    font-size: 20px;
+    font-size: 20px;
+}
+
+.navbar .nav-links ul li a:hover{
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 20px;
 }
 
 .navbar .menu-hamburger{
