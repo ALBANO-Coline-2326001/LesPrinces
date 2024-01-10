@@ -1,14 +1,14 @@
 /* Importation du style de la police d'écriture : Fredericka */
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -20,9 +20,9 @@ body{
 }
 
 /* Style du menu */
-.navbar{
+.navbar {
     position: absolute;
-    padding: 50px ;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,50 +30,61 @@ body{
     box-sizing: border-box;
 }
 
-.navbar .logo{
+.navbar .logo {
     font-size: 3em;
     font-weight: bold;
 }
 
-.navbar .nav-links ul{
+.navbar .nav-links ul {
     display: flex;
 }
 
-.navbar .nav-links ul li{
+.navbar .nav-links ul li {
     margin: 0 20px;
 }
 
-.navbar .nav-links ul li.active a{
+.navbar .nav-links ul li.active a {
     font-weight: 600;
     font-size: 20px;
     font-size: 20px;
 }
 
-.navbar .nav-links ul li a:hover{
+.navbar .nav-links ul li a:hover {
     font-weight: 600;
     font-size: 20px;
     font-size: 20px;
 }
 
-.navbar .menu-hamburger{
+.navbar .menu-hamburger {
     display: none;
     position: absolute;
     top: 50px;
     right: 50px;
     width: 5%;
 }
-    
+
+/* Style du lien vers le formulaire */
+.container a {
+    font-size: 25px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.container a:hover {
+    transition: all 0.5s ease;
+}
+
 /* Conteneur du titre, du paragraphe et du bouton contacter */
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     align-content: center;
-    padding: 15% 10% ;
+    padding: 15% 10%;
 }
 
-h1{
+h1 {
     font-size: 4em;
     text-transform: uppercase;
     text-align: center;
@@ -81,11 +92,11 @@ h1{
     padding-bottom: 5vh;
 }
 
-p{
+p {
     font-size: 1em;
     letter-spacing: 0.1em;
     padding-bottom: 5%;
-    font-weight: bold ;
+    font-weight: bold;
     text-align: justify;
 }
 
@@ -96,7 +107,7 @@ p{
     font-family: arial;
     font-size: 1em;
     border-radius: 27vh;
-    transition:  0.5s ease;
+    transition: 0.5s ease;
 }
 
 button {
@@ -105,38 +116,38 @@ button {
     font-family: arial;
     font-size: 1em;
     border-radius: 27vh;
-    transition:  0.5s ease;
+    transition: 0.5s ease;
 }
-    
+
 .contact:hover {
     padding: 1vh;
-    transition:  0.5s ease;
+    transition: 0.5s ease;
 }
 
 /* Style du bouton pour changer le thème */
-.lune{
+.lune {
     text-decoration: none;
     padding: 1vh;
     border-radius: 24vh;
     font-size: 1em;
-    transition:  1s ease;
+    transition: 1s ease;
 }
 
 .lune:hover {
     padding: 1vh;
     border-radius: 0;
-    transition:  1s ease;
+    transition: 1s ease;
 }
 
 /* Conteur pour les différentes parties */
-.container_personnage{
+.container_personnage {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     align-content: center;
-    padding-top: 10% ;
-    font-weight: bold ;
+    padding-top: 10%;
+    font-weight: bold;
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
@@ -155,7 +166,8 @@ thead tr {
     text-align: left;
 }
 
-th, td {
+th,
+td {
     padding: 15px 20px;
 }
 
@@ -166,65 +178,65 @@ blockquote p {
 }
 
 /* Style du formulaire */
-.container_formulaire{
-    margin : 0;
-    padding : 0;
+.container_formulaire {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top : 55%;
-    left : 50%;
+    top: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: -5;
 
 }
 
-form{
+form {
     padding: 3em;
 }
 
-form h1{
+form h1 {
     font-size: 2em;
     text-shadow: none;
 }
 
-form .separation{
+form .separation {
     width: 100%;
     height: 1px;
 }
 
-form .corps_formulaire{
+form .corps_formulaire {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-form .corps_formulaire .groupe{
+form .corps_formulaire .groupe {
     margin-top: 0.5em;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-form .corps_formulaire .gauche .groupe input{
+form .corps_formulaire .gauche .groupe input {
     margin-top: 0.5em;
     padding: 10px 5px 10px 30px;
 }
 
-form .corps_formulaire .gauche .groupe i{
+form .corps_formulaire .gauche .groupe i {
     position: absolute;
     left: 0;
     top: 25px;
     padding: 9px 8px;
 }
 
-form .corps_formulaire .droite{
+form .corps_formulaire .droite {
     margin-left: 40px;
 }
 
-form .corps_formulaire .droite .groupe{
+form .corps_formulaire .droite .groupe {
     height: 100%;
 }
 
-form .corps_formulaire .droite .groupe textarea{
+form .corps_formulaire .droite .groupe textarea {
     margin-top: 5px;
     padding: 10px;
     outline: none;
@@ -233,31 +245,31 @@ form .corps_formulaire .droite .groupe textarea{
 
 }
 
-form .pied_formulaire button{
+form .pied_formulaire button {
     margin-top: 10px;
     font-size: 15px;
-    border:none;
+    border: none;
     outline: none;
 }
 
-form .pied_formulaire button:hover{
+form .pied_formulaire button:hover {
     transform: scale(1.05);
     transition: all 0.5s ease;
 }
 
 /* Détection de la taille de l'écran */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
 
-    form .corps_formulaire .droite{
+    form .corps_formulaire .droite {
         margin-left: 0;
     }
 
-    form .pied_formulaire button{
+    form .pied_formulaire button {
         margin-top: 0px;
 
     }
 
-    .container_personnage h1{
+    .container_personnage h1 {
         font-size: 1.5em;
         padding-top: 10vh;
         padding-bottom: 5vh;
@@ -265,26 +277,26 @@ form .pied_formulaire button:hover{
 
     }
 
-    form{
+    form {
         padding: 1em;
     }
 
-    .navbar{
+    .navbar {
         padding: 0;
     }
 
-    .navbar .logo{
+    .navbar .logo {
         position: absolute;
         top: 4vh;
         left: 5vh;
         font-size: 2em;
     }
 
-    .navbar .menu-hamburger{
+    .navbar .menu-hamburger {
         display: block;
     }
 
-    .nav-links{
+    .nav-links {
         top: 0;
         left: 0;
         position: absolute;
@@ -298,20 +310,50 @@ form .pied_formulaire button:hover{
         transition: all 0.5s ease;
     }
 
-    .nav-links.mobile-menu{
+    .nav-links.mobile-menu {
         margin-left: 0;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .navbar .nav-links ul li{
+    .navbar .nav-links ul li {
         margin: 2.5vh 0;
         font-size: 300%;
     }
 
 
+}
+
+/* test */
+
+p {
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.p1 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 92, 204);
+    position: absolute;
+    float: right;
+    right: 5%;
+}
+
+p {
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.p2 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 92, 204);
+    position: absolute;
+    float: right;
+    right: 5%;
 }

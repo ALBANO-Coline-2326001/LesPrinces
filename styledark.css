@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body{
+body {
     font-family: 'Fredericka the Great', sans-serif;
     background-image: url(img/bgdark.jpg);
     color: white;
@@ -10,34 +10,43 @@ body{
 
 
 /* Style du menu */
-.navbar a{
+.navbar a {
     color: white;
-    
+
 }
 
 
-.navbar .nav-links ul li.active a{
+.navbar .nav-links ul li.active a {
     color: rgb(209, 79, 79);
 
 }
 
-.navbar .nav-links ul li a:hover{
+.navbar .nav-links ul li a:hover {
     color: rgb(219, 21, 21);
     transition: all 0.5s ease;
 }
 
-.navbar .nav-links ul li a{
+.navbar .nav-links ul li a {
     transition: all 0.5s ease;
 }
 
 
 
-h1{
+h1 {
     text-shadow: 0 0 20px white;
 }
 
-p{
+p {
     text-shadow: 0 0 20px rgb(230, 174, 174);
+}
+
+.text{
+    background-color: black;
+}
+
+/* Style du lien vers le formulaire */
+.container a:hover {
+    color: rgb(219, 21, 21);
 }
 
 /* Style du bouton contacter */
@@ -55,66 +64,73 @@ button {
     box-shadow: 3px 3px 12px #444444;
     color: white;
 }
-    
-    
+
+
 .contact:hover {
     border: 4px double #FFFFFF;
     box-shadow: 1px 1px 4px #777777;
 }
 
 /* Style du bouton pour changer le thème */
-.lune{
+.lune {
     background-color: rgba(142, 12, 12, 0);
 }
 
 /* Style du formulaire */
-form{
+form {
     background-color: black;
     border-radius: 10px;
 }
 
-form .separation{
+form .separation {
     background-color: rgb(219, 21, 21);
 }
 
-form .corps_formulaire{
+form .corps_formulaire {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-form .corps_formulaire .gauche .groupe input{
+form .corps_formulaire .gauche .groupe input {
     border: 1px solid #c9c9c9;
     outline-color: rgb(88, 9, 9);
     border-radius: 5px;
 }
 
-form .corps_formulaire .gauche .groupe i{
+form .corps_formulaire .gauche .groupe i {
     color: rgb(219, 21, 21);
 }
 
-form .corps_formulaire .droite .groupe textarea{
+form .corps_formulaire .droite .groupe textarea {
     background-color: #f8f8f8;
     border: 1px solid rgb(219, 21, 21);
     border-radius: 5px;
 }
 
-form .pied_formulaire button{
+form .pied_formulaire button {
     background-color: rgb(219, 21, 21);
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 
-form .pied_formulaire button:hover{
+form .pied_formulaire button:hover {
     background-color: rgb(88, 9, 9);
 }
 
 /* Détection de la taille de l'écran */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
 
-    .nav-links{
+    .nav-links {
         background-color: rgba(255, 255, 255, 0.299);
     }
-    
+
+}
+
+/* bouton haut de page*/
+.p1 {
+
+    border-color: rgba(0, 92, 204, 0.626);
+    color:rgba(255, 255, 255, 0.647);
 }
