@@ -31,13 +31,13 @@ snowfall snowflake img{
     width:20px
 }
 
-snowfall snowflake:nth-child(50){
-    animation:animation-snowflake-50 linear infinite;
+snowfall snowflake:nth-child(1){
+    animation:animation-snowflake-1 linear infinite;
     animation-duration:13.1s;
     animation-delay:-1.1s
 }
 
-@keyframes animation-snowflake-50{
+@keyframes animation-snowflake-1{
     0%{
         left:85%;
         top:calc(0% - 100px);
@@ -49,63 +49,42 @@ snowfall snowflake:nth-child(50){
         transform:scale(1.058) rotate3d(.35,.84,.72,997deg)
     }
 }
-snowfall snowflake:nth-child(49) {
-    animation: animation-snowflake-49 linear infinite;
-    animation-duration: 12s;
-    animation-delay: -14.8s;
+
+
+snowfall snowflake:nth-child(2){
+    animation:animation-snowflake-2 linear infinite;
+    animation-duration:12s;
+    animation-delay:-14.8s
 }
 
-@keyframes animation-snowflake-49 {
-    0% {
-        left: 26%;
-        top: calc(0% - 100px);
-        transform: scale(.637) rotate3d(.22, .52, .15, 0deg);
+@keyframes animation-snowflake-2{
+    0%{
+        left:26%;
+        top:calc(0% - 100px);
+        transform:scale(.637) rotate3d(.22,.52,.15,0deg)
     }
-    100% {
-        left: 16%;
-        top: calc(100% + 100px);
-        transform: scale(.637) rotate3d(.12, .67, .79, -1212deg);
-    }
+    100%{
+        left:16%;
+        top:calc(100% + 100px);
+        transform:scale(.637) rotate3d(.12,.67,.79,-1212deg)}
 }
 
 
-snowfall snowflake:nth-child(1) {
-    animation: animation-snowflake-1 linear infinite;
-    animation-duration: 12.4s;
-    animation-delay: -14.9s;
+snowfall snowflake:nth-child(3){
+    animation:animation-snowflake-3 linear infinite;
+    animation-duration:11.8s;
+    animation-delay:-10.4s
 }
 
-@keyframes animation-snowflake-1 {
-    0% {
-        left: 30%;
-        top: calc(0% - 100px);
-        transform: scale(.656) rotate3d(.08, .14, .22, 0deg);
+@keyframes animation-snowflake-3{
+    0%{
+        left:3%;
+        top:calc(0% - 100px);
+        transform:scale(1.235) rotate3d(.92,.78,.97,0deg)
     }
-    100% {
-        left: 53.2%;
-        top: calc(100% + 100px);
-        transform: scale(.656) rotate3d(.58, .99, .13, 729deg);
-    }
-}
-
-snowfall snowflake:nth-child(2) {
-    animation: animation-snowflake-1 linear infinite;
-    animation-duration: 12.4s;
-    animation-delay: -14.9s;
-}
-
-@keyframes animation-snowflake-1 {
-    0% {
-        left: 10%;
-        top: calc(0% - 100px);
-        transform: scale(.656) rotate3d(.08, .14, .22, 0deg);
-    }
-    100% {
-        left: 53.2%;
-        top: calc(100% + 100px);
-        transform: scale(.656) rotate3d(.58, .99, .13, 729deg);
+    100%{
+        left:26.8%;
+        top:calc(100% + 100px);
+        transform:scale(1.235) rotate3d(.75,.86,.08,-1042deg)
     }
 }
-
-snowfall snowflake:nth-child(49){animation:animation-snowflake-49 linear infinite;animation-duration:12s;animation-delay:-14.8s}
-@keyframes animation-snowflake-49{0%{left:26%;top:calc(0% - 100px);transform:scale(.637) rotate3d(.22,.52,.15,0deg)}100%{left:16%;top:calc(100% + 100px);transform:scale(.637) rotate3d(.12,.67,.79,-1212deg)}}
