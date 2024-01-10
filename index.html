@@ -1,98 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" >
-    <!-- Ajout d'une description (a completer) -->
-    <meta name="description" content="Les Princes du monde entier" >
-    
-    <title>Les Princes du monde entier : </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dans cette page web sur les princes du monde entier, nous allons parler des princes vertiels aux princes culturelles mais aussi commestible">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="splacement.css">
+    <title>Acceuil</title>
+
+    <link rel="stylesheet" href="style.css">
     <link id="css" rel="stylesheet" href="styleclair.css">
-    <link rel="icon" type="image/jpg" href="favicon.ico.jpg">
 </head>
 <body>
 
-
-
-<!-- Menu déroulant -->
-<header>
-<nav>
-      <ul>
-        <li class="deroulant"><a href="#">Les Princes du monde entier &ensp;</a>
-          <ul class="sous">
-            <li><a href="PrinceAngleterre.html">Prince d'Angleterre</a></li>
-            <li><a href="PrincesseEspagne.html">Princesse d'Espagne</a></li>
-          </ul>
-        </li>
-        <li class="deroulant"><a href="#">Les Princes Virtuels &ensp;</a>
-          <ul class="sous">
-            <li><a href="PrinceCR.html">Le Prince</a></li>
-            <li><a href="DarkPrinceCR.html">Le Prince Ténébreux</a></li>
-            <li><a href="PetitPrince.html">Le Petit Prince </a></li>
-          </ul>
-        </li>
-        <li class="deroulant"><a href="#">Divers &ensp;</a>
-          <ul class="sous">
-            <li><a href="PetitPrince.html">Le Petit Prince (Livre)</a></li>
-            <li><a href="PrinceLu.html">Les Princes Lu</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html">Accueil</a></li>
-        <li><button class="deroulant theme"  >Changer le thème</button></li>
-      </ul>
+    <!-- Menu -->
+    <nav class="navbar">
+        <input class="lune logo" id="theme" type="button" value="🌓" >
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="princemonde.html">Princes Vivants</a></li>
+                <li><a href="princevirtuel.html">Princes Virtuels</a></li>
+                <li><a href="divers.html">Divers</a></li>
+            </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
     </nav>
-</header>
 
+    <!-- Acceuil -->
+    <div class="container">
+        <h1>Les Princes <br><span class="auto-typing"></span></h1>
+        <p>Les princes sont des personnes qui ont un pouvoir royal. Ils sont souvent des hommes, mais il existe aussi des princesses.Les princes sont des personnes qui ont un pouvoir royal. Ils sont souvent des hommes, mais il existe aussi des princesses. Les princes sont des personnes qui ont un pouvoir royal. Ils sont souvent des hommes, mais il existe aussi des princesses.Les princes sont des personnes qui ont un pouvoir royal. Ils sont souvent des hommes, mais il existe aussi des princesses. Les princes sont des personnes qui ont un pouvoir royal. Ils sont souvent des hommes, mais il existe aussi des princesses.Les princes sont des personnes qui ont un pouvoir royal. Ils sont souvent des hommes, mais il existe aussi des princesses.</p>
+        <button><a href="formulaire.html">Nous contacter</a></button>
 
-<div class = 'burger'>
-<nav>
-  <label for="toggle">☰</label>
-  <input type="checkbox" id="toggle">
-  <div class="main_pages">
-      <a href="PrinceAngleterre.html">Prince d'Angleterre</a>
-      <a href="PrincesseEspagne.html">Princesse d'Espagne</a>
-      <a href="PrinceCR.html">Le Prince</a>
-      <a href="DarkPrinceCR.html">Le Prince Ténébreux</a>
-      <a href="PetitPrince.html">Le Petit Prince </a>
-      <a href="PetitPrince.html">Le Petit Prince (Livre)</a>
-      <a href="PrinceLu.html">Les Princes Lu</a>
-      <a href="index.html">Accueil</a>
-      <button class="theme" >Changer le thème</button>
-  </div>
-</nav>
-</div>
+    </div>
 
-
- <h1>Les Princes</h1>
-
-
-
-<!--formulaire sarah-->
-
-<script src="script.js" defer></script>
-
-<form action="/" class="form">
-  <label for="username">Username</label>
-  <input type="text" placeholder="Nom" class="Nom"
-  spellcheck="false"
-  pattern="[a-z_]*"
-  id="username"
-  autocomplete="off"
-  aria-describedby="usernameCondition">
-<p class="username__condition" id="usernameCondition">
-  <i class="fa-solid f-circle-info"></i>
-  Seuls les lettres minuscules et les underscores sont autorisés.
-</p>
-  <input type="email" placeholder="Email" class="Email">
-  <button type="submit" class="button">Souscrire</button>
-</form>
-
-
-
-<a href="https://twitter.com/ClashRoyale" class="twitter-share-button" 
-data-count="vertical" data-via="ClashRoyale">Tweet</a>
-<script src="http://platform.twitter.com/widgets.js"></script>
-
+    <!-- Script auto-typing -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.auto-typing', {
+            strings: ["vivants", "virtuels", "et autres"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
+    
+    <script src="menu.js" defer></script>
 </body>
 </html>
