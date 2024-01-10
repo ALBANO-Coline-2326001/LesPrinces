@@ -31,6 +31,7 @@ snowfall snowflake img{
     width:20px
 }
 
+
 snowfall snowflake:nth-child(1){
     animation:animation-snowflake-1 linear infinite;
     animation-duration:13.1s;
@@ -84,6 +85,25 @@ snowfall snowflake:nth-child(3){
     }
     100%{
         left:26.8%;
+        top:calc(100% + 100px);
+        transform:scale(1.235) rotate3d(.75,.86,.08,-1042deg)
+    }
+}
+
+snowfall snowflake:nth-child(4){
+    animation:animation-snowflake-4 linear infinite;
+    animation-duration:11.8s;
+    animation-delay:-10.4s
+}
+
+@keyframes animation-snowflake-4{
+    0%{
+        left:10%;
+        top:calc(0% - 100px);
+        transform:scale(1.235) rotate3d(.92,.78,.97,0deg)
+    }
+    100%{
+        left:50%;
         top:calc(100% + 100px);
         transform:scale(1.235) rotate3d(.75,.86,.08,-1042deg)
     }

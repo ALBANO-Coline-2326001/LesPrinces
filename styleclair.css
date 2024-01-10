@@ -13,6 +13,10 @@ body{
     
 }
 
+a:visited{
+    color: rgb(73, 165, 131);
+}
+
 .navbar .nav-links ul li.active a{
     color: rgb(51, 3, 174);
 
