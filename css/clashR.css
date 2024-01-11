@@ -1,0 +1,8 @@
+body {
+    background-image: url("../img/ClashRoyale.webp");
+}
+
+.menu-hamburger {
+    background-color: rgba(18, 6, 243, 0.506);
+    padding: 2%;
+}

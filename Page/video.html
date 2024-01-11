@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cette page contient la vidéo sous titré du Prince Ali dans Aladdin.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Les Princes</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link id="css" rel="stylesheet" href="../css/styleclair.css">
+    <link rel="icon" href="../img/favicon.ico">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar">
+        <input class="lune logo" id="theme" type="button" value="🌓">
+        <div class="nav-links">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../Page/princemonde.html">Princes Vivants</a></li>
+                <li><a href="../Page/princevirtuel.html">Princes Virtuels</a></li>
+                <li><a href="../Page/divers.html">Divers</a></li>
+            </ul>
+        </div>
+        <img src="../img/menu-btn.webp" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <div class="container_video">
+        <video controls>
+            <source src="../img/video/video.mp4" type="video/mp4">
+            <track src="../img/video/PrinceAli.vtt" kind="subtitles" srclang="fr" label="Français">
+            <track src="../img/video/PrinceAliENG.vtt" kind="subtitles" srclang="en" label="Anglais">
+        </video>
+    </div>
+
+    <script src="../Javascript/menu.js" defer></script>
+</body>
+
+</html>
