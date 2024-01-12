@@ -2,20 +2,25 @@
 <html lang="fr">
 
 <head>
+    <!-- Balise meta -->
     <meta charset="UTF-8">
     <meta name="description"
         content="Cette page est un formulaire afin de pouvoir nous contacter si l'utilisateur à un message à nous faire passer.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Titre de la page web -->
     <title>Nous contacter</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
+    <!-- Lien vers les pages de style et du favicon -->
     <link rel="stylesheet" href="../css/style.css">
     <link id="css" rel="stylesheet" href="../css/styleclair.css">
     <link rel="icon" href="../img/favicon.ico">
+
+    <!-- Lien vers les emojies font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -30,6 +35,7 @@
                 <li><a href="../Page/divers.html">Divers</a></li>
             </ul>
         </div>
+        <!-- Bouton pour changer le thème -->
         <img src="../img/menu-btn.webp" alt="menu hamburger" class="menu-hamburger">
     </nav>
 
@@ -39,8 +45,10 @@
             action="mailto:coline.albano@etu.univ-amu.fr?subject=Impression%20sur%20le%20site%20les%20princes"
             method="post" enctype="text/plain">
             <h1>Votre avis</h1>
+            <!-- Ligne de séparation -->
             <div class="separation"></div>
             <div class="corps_formulaire">
+                <!-- Partie gauche du formulaire -->
                 <div class="gauche">
                     <div class="groupe">
                         <label>Nom : </label>
@@ -59,6 +67,7 @@
                     </div>
                 </div>
                 <i class=""></i>
+                <!-- Partie droite du formulaire -->
                 <div class="droite">
                     <div class="groupe">
                         <label>Message : </label>
@@ -73,7 +82,7 @@
         </form>
     </div>
 
-
+    <!-- Lien avec le javascript pour changer le thème et adapter le menu au format téléphone-->
     <script src="../Javascript/menu.js" defer></script>
 </body>
 
