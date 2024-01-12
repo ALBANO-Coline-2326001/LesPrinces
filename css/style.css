@@ -1,5 +1,6 @@
-/* Importation du style de la police d'écriture : Fredericka */
+/* Page générique des emplacements du site */
 
+/* Mise à zéro des paramètres css par défaut */
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +8,13 @@
     text-decoration: none;
 }
 
+/* Décoration de la scrool barre */
 html {
     scroll-behavior: smooth;
 }
 
+/* Placement du body */
 body {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,6 +23,7 @@ body {
     height: 100%;
 }
 
+/* Style des liens */
 .lienpage {
     padding-top: 3vh;
     transition: all 0.5s ease;
@@ -97,20 +99,13 @@ body {
     padding: 15% 10%;
 }
 
+/* Style des titres */
 h1 {
     font-size: 4em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.1em;
     padding-bottom: 5vh;
-}
-
-p {
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    padding-bottom: 5%;
-    font-weight: bold;
-    text-align: justify;
 }
 
 /* Style du bouton contacter */
@@ -152,7 +147,7 @@ button {
     transition: 1s ease;
 }
 
-/* Conteur pour les différentes parties */
+/* Conteur des différentes parties */
 .container_personnage {
     display: flex;
     justify-content: center;
@@ -185,10 +180,6 @@ td {
 blockquote p {
     padding: 15px;
     border-radius: 5px;
-}
-
-blockquote {
-    cursor: pointer;
 }
 
 /* Style du formulaire */
@@ -270,11 +261,15 @@ form .pied_formulaire button:hover {
     transition: all 0.5s ease;
 }
 
-/* test */
-
+/* Style du texte */
 p {
     padding: 20px;
     margin: 20px 10px;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    padding-bottom: 5%;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .p1 {
@@ -284,11 +279,6 @@ p {
     position: absolute;
     float: right;
     right: 5%;
-}
-
-p {
-    padding: 20px;
-    margin: 20px 10px;
 }
 
 .p2 {
@@ -313,6 +303,7 @@ p {
 
 /* Détection de la taille de l'écran */
 @media screen and (max-width: 1000px) {
+    /* Style du titre de l'accueil*/
     .titrePrince {
         font-size: 2.5em;
         text-transform: uppercase;
@@ -323,6 +314,7 @@ p {
         padding-left: 4vh;
     }
 
+    /* Style du titre auto-typing de l'accueil*/
     .auto-typing {
         font-size: 0.7em;
     }
@@ -334,7 +326,7 @@ p {
         height: auto;
     }
 
-
+    /* Style du formulaire*/
     form .corps_formulaire .droite {
         margin-left: 0;
     }
@@ -344,6 +336,11 @@ p {
 
     }
 
+    form {
+        padding: 1em;
+    }
+
+    /* Style du titre des containers personnages*/
     .container_personnage h1 {
         font-size: 1.5em;
         padding-top: 10vh;
@@ -352,10 +349,7 @@ p {
 
     }
 
-    form {
-        padding: 1em;
-    }
-
+    /* Style du menu*/
     .navbar {
         padding: 0;
     }
