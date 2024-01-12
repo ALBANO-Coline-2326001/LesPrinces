@@ -1,16 +1,19 @@
-/* Importation du style de la police d'écriture : Fredericka */
+/* Page du thème sombre */
 
+/* Style du surlignement de la page */
+*::selection {
+    color: white;
+    background: rgb(219, 21, 21);
+}
+
+/* Style du body */
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: url("../img/bgdark.webp");
     color: white;
 }
 
-*::selection {
-    color: white;
-    background: rgb(219, 21, 21);
-}
-
+/* Style des liens */
 a:visited {
     color: white;
 }
@@ -38,16 +41,15 @@ a:visited {
     transition: all 0.5s ease;
 }
 
-/* Affichage du texte */
-
+/* Style du titre */
 h1 {
     text-shadow: 0 0 20px white;
 }
 
+/* Style du texte */
 p {
     text-shadow: 0 0 20px rgb(230, 174, 174);
 }
-
 
 /* Style du tableau */
 tbody tr,
@@ -135,6 +137,7 @@ form .pied_formulaire button:hover {
 /* Détection de la taille de l'écran */
 @media screen and (max-width: 1000px) {
 
+    /* Style du lien */
     .nav-links {
         background-color: rgba(255, 255, 255, 0.299);
     }
